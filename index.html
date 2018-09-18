@@ -468,6 +468,7 @@ alert("Porfavor ingrese, nombre de usuario y contraseña correctos.");
       function go(){
         if (document.form.username.value=='admin' && document.form.password.value=='admin'){
           alert("Correcto");
+          window.location = "paginas/muestra_reservacion.html";
         }
         else{
           alert("Por favor ingrese, nombre de usuario y contraseña correctos.");
@@ -487,7 +488,7 @@ alert("Porfavor ingrese, nombre de usuario y contraseña correctos.");
 
         <input type=password name=password placeholder="Ingresa tu Contraseña">
 
-        <input onclick=go() type=button value="Acceder">
+        <input onclick=go() type="submit" value="Acceder">
 
       </form>
 
