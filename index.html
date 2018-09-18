@@ -461,26 +461,25 @@ alert("Porfavor ingrese, nombre de usuario y contraseña correctos.");
 
 
     <!-- test login -->
-    <SCRIPT  language=JavaScript>
-    function go(){
-      if (document.form.username.value=='admin' && document.form.password.value=='admin'){
-        document.form.submit();
 
-      }
-      else{
-        alert("Por favor ingrese, nombre de usuario y contraseña correctos.");
-      }
-    }
-    </SCRIPT>
-    <FORM name=form action="paginas/muestra_reservacion.html">
     <div class="login-box">
 
+      <SCRIPT  language=JavaScript>
+      function go(){
+        if (document.form.username.value=='admin' && document.form.password.value=='admin'){
+          document.form.submit();
 
+        }
+        else{
+          alert("Por favor ingrese, nombre de usuario y contraseña correctos.");
+        }
+      }
+      </SCRIPT>
       <img src="imagenes/images.png" class="avatar">
 
       <h1>Iniciar Sesi&oacute;n</h1>
 
-      <form>
+      <form name=form action="paginas/muestra_reservacion.html">
 
         <p>Usuario</p>
 
