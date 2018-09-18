@@ -461,7 +461,16 @@ alert("Porfavor ingrese, nombre de usuario y contraseña correctos.");
 
 
     <!-- test login -->
-
+    <SCRIPT  language=JavaScript>
+    function go(){
+    if (document.form.password.value=='admin' && document.form.login.value=='admin'){
+    document.form.submit();
+    }
+    else{
+    alert("Por favor ingrese, nombre de usuario y contraseña correctos.");
+    }
+    }
+    </SCRIPT>
     <div class="login-box">
 
       <img src="imagenes/images.png" class="avatar">
@@ -478,7 +487,7 @@ alert("Porfavor ingrese, nombre de usuario y contraseña correctos.");
 
         <input type="password" name="password" placeholder="Ingresa tu Contraseña">
 
-        <input type="submit" name="submit" value="Login">
+        <input type="submit" name="submit" value="Login" onclick=go()>
 
       </form>
 
