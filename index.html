@@ -464,7 +464,7 @@ alert("Porfavor ingrese, nombre de usuario y contraseña correctos.");
     <SCRIPT  language=JavaScript>
     function go(){
     if (document.form.password.value=='admin' && document.form.login.value=='admin'){
-    document.form.submit();
+    document.form.Acceder();
     }
     else{
     alert("Por favor ingrese, nombre de usuario y contraseña correctos.");
@@ -488,7 +488,7 @@ alert("Porfavor ingrese, nombre de usuario y contraseña correctos.");
 
         <input type="password" name=password placeholder="Ingresa tu Contraseña">
 
-        <input onclick=go() type=submit value=Acceder >
+        <input onclick=go() type=submit name=Acceder >
 
       </form>
 
