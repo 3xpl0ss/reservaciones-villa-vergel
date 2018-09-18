@@ -1,16 +1,27 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>
-    Muestra Informaci&oacute;n
-  </title>
-  <link rel="stylesheet" type="text/css" href="css/estilos.css"
-  <body>
-<!-- Place this tag where you want the Awesome Table Widget to render -->
-<div data-type="AwesomeTableView" data-viewID="-LMesZI2TFGHZJ7r-NGB"></div>
-
-<!-- Place this within the <head> tag or just before the end of your <body> tag. -->
-<script src="https://awesome-table.com/AwesomeTableInclude.js"></script>
-
-  </body>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Iniciar Sesi&oacute;n</title>
 </head>
+
+<body>
+<SCRIPT  language=JavaScript>
+function go(){
+if (document.form.password.value=='admin' && document.form.login.value=='admin'){
+        document.form.submit();
+    }
+    else{
+         alert("Porfavor ingrese, nombre de usuario y contraseña correctos.");
+    }
+}
+</SCRIPT>
+<FORM name=form action="paginas/muestra_reservacion.html">
+
+<P>Usuario:    <INPUT type=text name=login>
+<P>Contraseña: <INPUT type=password name=password>
+<INPUT onclick=go() type=button value=Acceder>
+
+</FORM>
+</body>
 </html>
